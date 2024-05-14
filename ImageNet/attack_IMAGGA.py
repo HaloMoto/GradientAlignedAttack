@@ -56,8 +56,8 @@ def Untarget_GAA_to_IMAGGA_Linf_test(surrogate_model_list, device, test_loader):
     decay = 1.0
     loss_type = 'GAL'
     max_queries = 5
-    api_key = 'acc_561050984c7cef0'
-    api_secret = '249513df64abc371704bce8a6103f9f2'
+    api_key = 'xxx' # IMAGGA API key
+    api_secret = 'xxx' # IMAGGA API secret
     label_projection = np.load('saved_model/label_projection.npy', allow_pickle=True).item()
     logger = _get_logger('logs/GAA_to_IMAGGA_Linf.log', 'info')
     logger.info('---------------------------------------------------')
@@ -117,8 +117,8 @@ def Untarget_GAA_to_IMAGGA_L2_test(surrogate_model_list, device, test_loader):
     decay = 1.0
     loss_type = 'GAL'
     max_queries = 5
-    api_key = 'acc_561050984c7cef0'
-    api_secret = '249513df64abc371704bce8a6103f9f2'
+    api_key = 'xxx'
+    api_secret = 'xxx'
     label_projection = np.load('saved_model/label_projection.npy', allow_pickle=True).item()
     logger = _get_logger('logs/GAA_to_IMAGGA_L2.log', 'info')
     logger.info('---------------------------------------------------')
@@ -174,8 +174,8 @@ def Untarget_GA_BASES_to_IMAGGA_Linf_test(surrogate_model_list, device, test_loa
     epsilon = 12/255
     alpha = 1.2/255
     max_query = 5
-    api_key = 'acc_b583055a6cf1cf1'
-    api_secret = '483522278868c8b349d205c8ed664300'
+    api_key = 'xxx'
+    api_secret = 'xxx'
     label_projection = np.load('saved_model/label_projection.npy', allow_pickle=True).item()
     logger = _get_logger('logs/GA_BASES_to_IMAGGA_Linf.log', 'info')
     logger.info('---------------------------------------------------')
@@ -231,8 +231,8 @@ def Untarget_GA_BASES_to_IMAGGA_L2_test(surrogate_model_list, device, test_loade
     epsilon = np.sqrt((1e-3) * 3 * 224 * 224)
     alpha = 2.0
     max_query = 5
-    api_key = 'acc_b583055a6cf1cf1'
-    api_secret = '483522278868c8b349d205c8ed664300'
+    api_key = 'xxx'
+    api_secret = 'xxx'
     label_projection = np.load('saved_model/label_projection.npy', allow_pickle=True).item()
     logger = _get_logger('logs/GA_BASES_to_IMAGGA_L2.log', 'info')
     logger.info('---------------------------------------------------')
