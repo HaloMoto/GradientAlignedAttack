@@ -21,3 +21,6 @@ python -u ./ImageNet/run_BASES_with_GACE.py --ensemble-surrogate1 --victim-model
 # Attacking real-world API, IMAGGA
 python -u ./ImageNet/attack_IMAGGA.py --ensemble-surrogate1 --test-batch-size 1 --gpu 0
 ```
+
+## Note that
+The predict_status_arr_v2.txt file in the ImageNet/saved_model folder needs to be replaced; it stores information about whether each sample in the used dataset has been correctly classified by all the surrogate and victim models.
