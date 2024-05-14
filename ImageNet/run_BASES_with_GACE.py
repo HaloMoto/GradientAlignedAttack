@@ -22,7 +22,7 @@ parser.add_argument('--ensemble-surrogate2', action='store_true', default=False,
 parser.add_argument('--victim-model-type', default='vgg19', type=str)
 parser.add_argument('--test-batch-size', type=int, default=1, metavar='N',
                     help='input batch size for testing (default: 128)')
-parser.add_argument('--max-query', default=5, type=int)
+parser.add_argument('--max-query', default=50, type=int)
 parser.add_argument('--data-dir', default='../data/', type=str)
 parser.add_argument('--no-cuda', action='store_true', default=False,
                     help='disables CUDA training')
